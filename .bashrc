@@ -30,4 +30,12 @@ shopt -s no_empty_cmd_completion
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+[[ -s "/Users/jdunck/.rvm/scripts/rvm" ]] && source "/Users/jdunck/.rvm/scripts/rvm"
 . /usr/local/bin/virtualenvwrapper.sh
+
+alias vt='./manage.py test --traverse-namespace  --with-progressive -s'
+
+NOSE_PROGRESSIVE_EDITOR='subl'
+
+log(){ date >> ~/Dropbox/log/$* ; cat >> ~/Dropbox/log/$* ; }
+
