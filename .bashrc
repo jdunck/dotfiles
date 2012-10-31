@@ -2,6 +2,8 @@ export LC_CTYPE="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+
 
 # functions
 function manp { man -t "${1}" | open -f -a Preview; }
@@ -34,8 +36,10 @@ shopt -s checkwinsize
 . /usr/local/bin/virtualenvwrapper.sh
 
 alias vt='./manage.py test --traverse-namespace  --with-progressive -s'
+alias localproxy='ssh -NR20020:127.0.0.1:8000 dunck.us'
 
 NOSE_PROGRESSIVE_EDITOR='subl'
+
 
 log(){ date >> ~/Dropbox/log/$* ; cat >> ~/Dropbox/log/$* ; }
 
