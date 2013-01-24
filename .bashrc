@@ -11,8 +11,10 @@ export TERM=xterm-256color
 # functions
 function manp { man -t "${1}" | open -f -a Preview; }
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-   . `brew --prefix`/etc/bash_completion
+if [[ -f '/usr/local/bin/brew' ]]; then
+   for dir in `brew --prefix`/etc/bash_completion.d/*; do
+      . $dir 
+   done
 fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/usr/local/sbin:/usr/local/bin:$PATH
@@ -43,7 +45,6 @@ alias vt='./manage.py test --traverse-namespace  --with-progressive -s'
 alias localproxy='ssh -NR20020:127.0.0.1:8000 dunck.us'
 
 NOSE_PROGRESSIVE_EDITOR='subl'
-
 
 log(){ date >> ~/Dropbox/log/$* ; cat >> ~/Dropbox/log/$* ; }
 
