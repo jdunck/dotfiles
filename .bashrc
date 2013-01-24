@@ -3,7 +3,7 @@ export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-
+export PS1='\h:\W \u\$ '
 PATH=$PATH:$HOME/bin
 export PATH
 export TERM=xterm-256color
