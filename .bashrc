@@ -43,7 +43,7 @@ shopt -s checkwinsize
 
 alias vt='./manage.py test --traverse-namespace  --with-progressive -s'
 alias localproxy='ssh -NR20020:127.0.0.1:8000 dunck.us'
-
+alias be='bundle exec'
 NOSE_PROGRESSIVE_EDITOR='subl'
 
 log(){ date >> ~/Dropbox/log/$* ; cat >> ~/Dropbox/log/$* ; }

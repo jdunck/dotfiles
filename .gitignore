@@ -7,3 +7,4 @@
 ._*
 .cvsignore
 CVS
+.vim/.netrwhist
