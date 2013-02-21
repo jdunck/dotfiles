@@ -7,7 +7,7 @@ export PS1='\h:\W \u\$ '
 PATH=$PATH:$HOME/bin
 export PATH
 export TERM=xterm-256color
-
+export EDITOR=vim
 # functions
 function manp { man -t "${1}" | open -f -a Preview; }
 
