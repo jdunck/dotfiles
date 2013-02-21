@@ -61,6 +61,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 
+map <c-t> :CommandT<CR>
+
 " Command-T
 let g:CommandTMatchWindowReverse   = 1
 let g:CommandTMaxHeight            = 10
