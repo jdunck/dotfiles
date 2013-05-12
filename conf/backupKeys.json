@@ -1,17 +1,21 @@
 {
- "VotizenJGDMBP-2.local": {
-   "keys": [
-      "/Users/jdunck/.ssh/aws-causes-jdunck-20130124.pem",
-      "/Users/jdunck/.ssh/aws-jdunck-causes.pem",
-      "/Users/jdunck/.ssh/aws-jdunck.pem",
-      "/Users/jdunck/.ssh/causes_rsa",
-      "/Users/jdunck/.ssh/causes_rsa.pub",
-      "/Users/jdunck/.ssh/config",
-      "/Users/jdunck/.ssh/id_rsa",
-      "/Users/jdunck/.ssh/id_rsa.pub",
-      "/Users/jdunck/.gnupg/gpg.conf",
-      "/Users/jdunck/.gnupg/pubring.gpg",
-      "/Users/jdunck/.gnupg/secring.gpg"
-    ]
+  "VotizenJGDMBP-2.local": {
+    "keys": {
+      "ssh": [
+        "/Users/jdunck/.ssh/aws-causes-jdunck-20130124.pem",
+        "/Users/jdunck/.ssh/aws-jdunck-causes.pem",
+        "/Users/jdunck/.ssh/aws-jdunck.pem",
+        "/Users/jdunck/.ssh/causes_rsa",
+        "/Users/jdunck/.ssh/causes_rsa.pub",
+        "/Users/jdunck/.ssh/config",
+        "/Users/jdunck/.ssh/id_rsa",
+        "/Users/jdunck/.ssh/id_rsa.pub"
+      ],
+      "gpg": [
+        "/Users/jdunck/.gnupg/gpg.conf",
+        "/Users/jdunck/.gnupg/pubring.gpg",
+        "/Users/jdunck/.gnupg/secring.gpg"
+      ]
+    }
   }
 }
