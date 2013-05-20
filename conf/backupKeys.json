@@ -22,16 +22,10 @@
     "keys": {
       "ssh": [
         "/Users/jdunck/.ssh/config",
-        "/Users/jdunck/.ssh/github_deploy_pegasus",
-        "/Users/jdunck/.ssh/github_deploy_pegasus.pub",
-        "/Users/jdunck/.ssh/github_pegasus",
-        "/Users/jdunck/.ssh/github_pegasus.pub",
         "/Users/jdunck/.ssh/id_cib_github",
         "/Users/jdunck/.ssh/id_cib_github.pub",
-        "/Users/jdunck/.ssh/id_rsa",
-        "/Users/jdunck/.ssh/id_rsa-test",
-        "/Users/jdunck/.ssh/id_rsa-test.pub",
-        "/Users/jdunck/.ssh/id_rsa.pub",
+        "/Users/jdunck/.ssh/mbp2_default",
+        "/Users/jdunck/.ssh/mbp2_default.pub",
         "/Users/jdunck/.ssh/jdunck-archiveteam.pem",
         "/Users/jdunck/.ssh/votizen-causes.pem",
         "/Users/jdunck/.ssh/votizen-causes2.pem"
