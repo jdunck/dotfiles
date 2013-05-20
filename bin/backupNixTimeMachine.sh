@@ -40,3 +40,4 @@ else
   #sudo mv "$full_dest" "${full_dest}-fail"
 fi
 ##jwz: rsync -vaxAX --delete  --ignore-errors  / /Volumes/Backup/
+## http://blog.interlinked.org/tutorials/rsync_time_machine.html
