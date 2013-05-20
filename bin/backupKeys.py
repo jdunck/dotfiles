@@ -2,12 +2,12 @@
 import os.path, shutil, subprocess, socket
 import json
 
-def backup(dest):
+def backup(hostname, dest):
   location = os.path.abspath(__file__)
   conf_location = os.path.normpath(os.path.join(location, "../../conf/backupKeys.json"))
   with open(conf_location, 'r') as f:
     conf = json.loads(f.read())
-  local_conf = conf[socket.gethostname()]
+  local_conf = conf[hostname]
   ownertrust = subprocess.check_output(["gpg", "--export-ownertrust"] )
   with open(os.path.join(dest, 'gpg-ownertrust'), 'w') as f:
     f.write(ownertrust)
@@ -23,7 +23,9 @@ if __name__ == '__main__':
   if len(sys.argv) == 1:
     print("destination path is required")
     sys.exit(1)
-  dest = os.path.abspath(sys.argv[1])
+  hostname = socket.gethostname()
+  dest = os.path.join(os.path.abspath(sys.argv[1]),
+                      hostname)
   if not os.path.exists(dest):
     os.makedirs(dest)
-  backup(dest)
+  backup(hostname, dest)
