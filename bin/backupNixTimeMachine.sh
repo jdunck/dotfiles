@@ -10,7 +10,7 @@ dest=${root_dir}/${HOSTNAME}
 if [[ -e /proc ]] ; then
   excludes="${excludes} --exclude /proc"
 fi
-excludes="--exclude \"${root_dir}\" --exclude /.Spotlight-V100 --exclude /.com.apple.NetBootX --exclude /Library/Updates --exclude /private/var/vm --exclude $HOME/Dropbox --exclude $HOME/votizen/Dropbox --exclude $HOME/causes/Dropbox"
+excludes="--exclude \"${root_dir}\" --exclude /.Spotlight-V100 --exclude /.com.apple.NetBootX --exclude /Library/Updates --exclude /private/var/vm --exclude /private/var/folders --exclude $HOME/Dropbox --exclude $HOME/votizen/Dropbox --exclude $HOME/work/causes/Dropbox"
 
 date=`date "+%Y-%m-%dT%H-%M-%S"`
 
