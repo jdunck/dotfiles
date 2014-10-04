@@ -25,7 +25,7 @@ for previous in `ls -1 "${dest}/previous"`; do
 done
 
 full_dest="${dest}/previous/back-$date"
-options="--archive --delete --one-file-system --partial --progress --acls --xattrs --ignore-errors"
+options="--archive --delete --one-file-system --partial --progress --extended-attributes --ignore-errors"
 
 echo "backing up to $full_dest, using $link_dests for delta"
 echo sudo rsync -vv --itemize-changes $options $excludes $link_dests / "$full_dest"
