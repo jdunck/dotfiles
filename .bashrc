@@ -41,6 +41,10 @@ shopt -s checkwinsize
 
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
+# fix terminals broken by network disconnect under tmux
+alias paste-unbracket="printf '\e[?2004l'"
+
+
 alias vt='./manage.py test --traverse-namespace  --with-progressive -s'
 alias localproxy='ssh -NR20020:127.0.0.1:8000 dunck.us'
 alias be='bundle exec'
